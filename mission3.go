@@ -14,7 +14,6 @@ import (
 	"time"
 )
 
-// Demo function, not used in main
 // Generates Passcode using a UTF-8 (not base32) secret and custom parameters
 func GeneratePassCode(utf8string string) string {
 	secret := base32.StdEncoding.EncodeToString([]byte(utf8string))
